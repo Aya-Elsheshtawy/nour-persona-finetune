@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Model weights are multi-GB and don't belong in git — see nour_persona_finetune_plan.md
+# for how to regenerate/download the .gguf via the Colab notebook.
+*.gguf
+
+# Generated locally by generate_modelfile.py — regenerate with:
+#   python generate_modelfile.py <path-to-gguf>
+Modelfile
+
+.streamlit/
